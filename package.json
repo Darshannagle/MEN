@@ -1,0 +1,17 @@
+{
+  "name": "men",
+  "version": "1.0.0",
+  "description": "Node - Express -Mongodb",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon index.js",
+    "test": "npm index.js"
+  },
+  "author": "DAN",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  }
+}

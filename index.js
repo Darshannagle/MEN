@@ -9,7 +9,7 @@ app.listen(2500, () => {
 app.get('/', (req, res) => {
     res.send("hello")
 })
-mongoose.connect("mongodb+srv://nagledarshan12:Darshan108@dan.szrelsh.mongodb.net/?retryWrites=true&w=majority&appName=DAN").then(console.log("connected ")).catch((e) => console.log(e));
+mongoose.connect("mongodb+srv://username:password@dan.szrelsh.mongodb.net/?retryWrites=true&w=majority&appName=DAN").then(console.log("connected ")).catch((e) => console.log(e));
 
 app.use(cors())
 app.use(express.json())

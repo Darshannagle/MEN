@@ -4,13 +4,14 @@
   "description": "Node - Express -Mongodb",
   "main": "index.js",
   "scripts": {
-    "serve": "nodemon index.js",
+    "start": "nodemon index.js",
     "test": "npm index.js"
   },
   "author": "DAN",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^4.19.2",
     "mongoose": "^8.4.1"
   }

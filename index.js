@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const Product = require("./model/product.js");
 const app = express();
+const dotenv = require("dotenv");
+dotenv.config();
 const cors = require("cors");
 app.listen(2500, () => {
   console.log("running : 2500");
@@ -9,10 +11,9 @@ app.listen(2500, () => {
 app.get("/", (req, res) => {
   res.send("hello");
 });
+
 mongoose
-  .connect(
-    "mongodb+srv://nagledarshan12:Darshan108@dan.szrelsh.mongodb.net/?retryWrites=true&w=majority&appName=DAN"
-  )
+  .connect(process.env.MONGO_URL || "mongodb://localhost:27017/test")
   .then(console.log("connected "))
   .catch((e) => console.log(e));
 
